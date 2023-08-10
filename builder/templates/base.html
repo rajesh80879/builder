@@ -53,7 +53,7 @@
         type="text/css"
       />
   
-    <title>Gold's Gym</title>
+    <title>Regency Builder's</title>
   </head>
   <body>
     <!--begin::Header-->
@@ -87,7 +87,7 @@
           <!--begin::Menu wrapper-->
           <div>
             <img
-              src="{% static 'assets/media/con.png' %}"
+              src="{% static 'assets/media/construction.png' %}"
               style="width: 200%; height: 90%;"
               class="m-1 rounded-circle"
               />  
@@ -796,6 +796,8 @@
             </div>
             <!--end::Theme mode-->
             <!--begin::User menu-->
+            {% if request.user.is_authenticated %}
+
             <div class="app-navbar-item ms-1 ms-md-3" id="kt_header_user_menu_toggle">
               <!--begin::Menu wrapper-->
               <div class="cursor-pointer symbol symbol-30px symbol-md-40px" data-kt-menu-trigger="{default: 'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
@@ -841,7 +843,14 @@
                 <!--end::Menu item-->
               </div>
               <!--end::User account menu-->
+              {% else %}
+              <div class="m-7">
+                <a href="{% url 'login-data' %}">
+                <button class="btn-warning btn-lg">Login</button>
+              </a>
+              </div>
               <!--end::Menu wrapper-->
+              {% endif %}
             </div>
             <!--end::User menu-->
             <!--begin::Header menu toggle-->

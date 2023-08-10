@@ -11,8 +11,6 @@ from django.contrib.auth.hashers import make_password
 def login_data(request):
     try:
         if request.method == "GET":
-            if request.user.is_authenticated:
-                return redirect('dashboard')
             return render(request, "login.html")
         
         elif request.method == "POST":
@@ -31,7 +29,7 @@ def login_data(request):
         messages.error(request, "Something went Wrong")
         return redirect("/")
     
-@login_required 
+
 def dashboard(request):
     return render(request, "dashboard.html")
 
@@ -68,15 +66,4 @@ def logout_user(request):
         return redirect("/")
 
 
-@login_required
-def del_user(request, pk):
-    try:
-        user = CustomUser.objects.get(id=pk)
-        user.delete()
-        messages.success(request, "User deleted successfully")
-        return redirect("contact")
-        
-    except Exception as ep:
-        messages.error(request, "Something went Wrong ")
-        return redirect("/")
 
