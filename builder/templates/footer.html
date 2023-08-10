@@ -12,25 +12,25 @@
             />  
         </div>      
       </div>
-      <div class="col mb-3 col-md-3 py-5 mt-20">
+      <div class="col mb-3 col-md-3" style="margin-top: 80px">
 
         <ul class="nav flex-column ">
-          <li class="nav-item mb-2"><a href="dashboard"
-              class="nav-link-hover link-active link-primary text-decoration-none link-opacity-40 p-0 text-white">Company</a></li>
+          <li class="nav-item mb-2"><a href="{% url 'dashboard' %}"
+              class="nav-link-hover link-active link-primary text-decoration-none link-opacity-40 p-0 text-white"><h4 class="text-white">Company</h4></a></li>
           <li class="nav-item mb-2"><a href="#"
-              class="nav-link-hover link-active link-primary text-decoration-none link-opacity-40 p-0 text-white">About Us</a>
+              class="nav-link-hover link-active link-primary text-decoration-none link-opacity-40 p-0 text-white"><h4 class="text-white">About Us</h4></a>
           </li>
           <li class="nav-item mb-2"><a href="#"
-            class="nav-link-hover link-active link-primary text-decoration-none link-opacity-40 p-0 text-white">Projects</a></li>
+            class="nav-link-hover link-active link-primary text-decoration-none link-opacity-40 p-0 text-white"><h4 class="text-white">Projects</h4></a></li>
         <li class="nav-item mb-2"><a href="#"
-            class="nav-link-hover link-active link-primary text-decoration-none link-opacity-40 p-0 text-white">Re-Development</a>
+            class="nav-link-hover link-active link-primary text-decoration-none link-opacity-40 p-0 text-white"><h4 class="text-white">Re-Development</h4></a>
         </li>
-        <li class="nav-item mb-2"><a href="#"
-          class="nav-link-hover link-active link-primary text-decoration-none link-opacity-40 p-0 text-white">Contact</a>
+        <li class="nav-item mb-2"><a href="{% url 'contact' %}"
+          class="nav-link-hover link-active link-primary text-decoration-none link-opacity-40 p-0 text-white"><h4 class="text-white">Contact Us</h4></a>
       </li>
         </ul>
       </div>
-      <div class="col col-md-3 mb-3 py-5 mt-20">
+      <div class="col col-md-3 mb-3" style="margin-top: 70px">
         <ul class="nav flex-column">
           
           <li class="nav-item mb-2"><a href="#"
@@ -52,22 +52,33 @@
         </ul>
       </div>
 
-      <div class="col mb-3 col-md-3 py-5 mt-20">
+      <div class="col mb-3 col-md-3 mt-20">
         <h6 class="text-white">Map</h6>
-        <!-- <div class="google-maps-link"> <a aria-label="View larger map" target="_blank" jstcache="15" href="https://maps.google.com/maps?ll=18.515859,73.843533&amp;z=15&amp;t=m&amp;hl=en&amp;gl=IN&amp;mapclient=embed&amp;cid=2161136497501928990" jsaction="mouseup:placeCard.largerMap">View larger map</a> 
-          <iframe src=”https://www.google.com/maps/embed?pb=!…” width=”600″ height=”450″ frameborder=”0″ style=”border:0″ allowfullscreen></iframe>
-        </div> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.104953656738!2d72.94981517495738!3d19.190617748364712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b90404b088c3%3A0x619af960376dcc8d!2sATMS%20Tech%20Solutions%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1691667360604!5m2!1sen!2sin" 
+          width="200" height="200" 
+          style="border:0;" allowfullscreen="" 
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+        </div>
         
       </div>
-      <div>
+      <div style="margin-left: 100px;margin-bottom: 20px;">
         <a href="https://api.whatsapp.com/send?phone=7798085657">
         <img
           src="{% static 'assets/media/whatsapp.png' %}"
           style="height: 70px;width: 70px;"
           class="m-1 rounded-circle"
+          data-bs-toggle="tooltip" title="whatsapp us"
           />  
-      </a>
-      </div>   
+      </a><span class="text-white " >Contact us on whatsapp</span>
+       
+      <div class="d-flex justify-content-end me-10">
+        <div id="kt_docs_example_basic" class="btn btn-primary btn-sm rounded-circle" 
+            data-kt-scrolltop="true" data-bs-toggle="tooltip" title="Scroll up">
+          <i class="bi bi-chevron-up fs-2x" style="margin-left: 6px;"></i>
+          
+        </div>
+      </div>
+    </div>  
       
     </footer>
   </div>

@@ -34,7 +34,6 @@ def dashboard(request):
     return render(request, "dashboard.html")
 
 
-@login_required
 def contact(request):
     if request.method == "GET":
         user = CustomUser.objects.all().exclude(id=request.user.id)
