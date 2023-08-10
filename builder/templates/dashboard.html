@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% load static %}
+
+{% block content %}
+<div>
+  <img
+    src="{% static 'assets/media/building.jpg' %}"
+    style="width: 100%; height: 100%; opacity: 0.5;"
+    class="m-1"
+    />
+    
+</div>
+
+{% endblock %}
+
+
+<script>
+  var alertBoxes = document.querySelectorAll(".alert");
+  alertBoxes.forEach(function (alertBox) {
+    // Set a timeout to remove the alert box after 3 seconds
+    setTimeout(function () {
+      alertBox.remove();
+    }, 3000);
+  });
+</script>
+

@@ -1,0 +1,91 @@
+{% extends 'base.html' %} {% load static %}
+{% block content %}
+<!--begin::Content-->
+<div id="kt_app_content" class="app-content flex-column-fluid">
+  <!--begin::Content container-->
+  <div id="kt_app_content_container" class="app-container container-xxl">
+    <!--begin::Contact-->
+    <div class="card bg-black">
+      <!--begin::Body-->
+      <div class="card-body p-lg-17">
+        <!--begin::Row-->
+        <div class="row mb-3">
+          <!--begin::Col-->
+          <div class="col-md-6 pe-lg-10">
+            <!--begin::Form-->
+            <form action="" class="form mb-15" method="post" id="kt_contact_form">
+              <h1 class="fw-bold text-white mb-9 text-center">Get in touch with us & send us message today!</h1>
+              <!--begin::Input group-->
+              <div class="row mb-5">
+                <!--begin::Col-->
+                <div class="col-md-6 fv-row">
+                  <!--begin::Label-->
+                  <label class="fs-5 fw-semibold mb-2 text-white">Name</label>
+                  <!--end::Label-->
+                  <!--begin::Input-->
+                  <input type="text" class="form-control form-control-solid" placeholder="" name="name" />
+                  <!--end::Input-->
+                </div>
+                <!--end::Col-->
+                <!--begin::Col-->
+                <div class="col-md-6 fv-row">
+                  <!--end::Label-->
+                  <label class="fs-5 fw-semibold mb-2 text-white">Email</label>
+                  <!--end::Label-->
+                  <!--end::Input-->
+                  <input type="text" class="form-control form-control-solid text-white" placeholder="" name="email" />
+                  <!--end::Input-->
+                </div>
+                <!--end::Col-->
+              </div>
+              <!--end::Input group-->
+              <!--begin::Input group-->
+              <div class="d-flex flex-column mb-5 fv-row">
+                <!--begin::Label-->
+                <label class="fs-5 fw-semibold mb-2 text-white">Mobile no.</label>
+                <!--end::Label-->
+                <!--begin::Input-->
+                <input class="form-control form-control-solid" placeholder="" name="Mobile no." />
+                <!--end::Input-->
+              </div>
+              <!--end::Input group-->
+              <!--begin::Input group-->
+              <div class="d-flex flex-column mb-10 fv-row">
+                <label class="fs-6 fw-semibold mb-2 text-white">Message</label>
+                <textarea class="form-control form-control-solid" rows="6" name="message" placeholder=""></textarea>
+              </div>
+              <!--end::Input group-->
+              <!--begin::Submit-->
+              <button type="submit" class="btn btn-primary" id="kt_contact_submit_button">
+                <!--begin::Indicator label-->
+                <span class="indicator-label">Send Message</span>
+                <!--end::Indicator label-->
+                <!--begin::Indicator progress-->
+                <span class="indicator-progress">Please wait...
+                <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+                <!--end::Indicator progress-->
+              </button>
+              <!--end::Submit-->
+            </form>
+            <!--end::Form-->
+          </div>
+          <!--end::Col-->
+          <!--begin::Col-->
+          <div class="col-md-6 ps-lg-10">
+            <!--begin::Map-->
+            <div id="kt_contact_map" class="w-100 rounded mb-2 mb-lg-0 mt-2" style="height: 486px"></div>
+            <!--end::Map-->
+          </div>
+          <!--end::Col-->
+        </div>
+        <!--end::Row-->
+       
+      </div>
+      <!--end::Body-->
+    </div>
+    <!--end::Contact-->
+  </div>
+  <!--end::Content container-->
+</div>
+<!--end::Content-->
+{% endblock %}
