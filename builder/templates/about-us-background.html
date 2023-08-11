@@ -1,0 +1,76 @@
+{% extends 'base.html' %} {% load static %}
+{% block content %}
+<div class="card ">
+    <div class="app-main  flex-column flex-row-fluid" id="kt_app_main">
+      <div class="d-flex flex-column flex-column-fluid">
+        <div id="kt_app_content" class="app-content  flex-column-fluid">
+          <div id="kt_app_content_container" class="app-container">
+            <!--begin::Content wrapper-->
+            <div class="row g-5 g-xl-10 mt-20 mb-5 mb-xl-12">
+              <!--begin::Engage widget 6-->
+              <div class="card flex-grow-1 bgi-no-repeat bgi-size-contain bgi-position-x-end h-xl-100" style="
+                background-color: #020202;
+                background-image: url('{{ song.song_image.url }}');">
+                <!--begin::Body-->
+                <div class="card-body d-flex justify-content-between flex-column ps-xl-18 h-300px">
+                  <!--begin::Heading-->
+                  <div class="mb-20 pt-xl-13">
+                    <!--begin::Title-->
+                    <h3 class="fw-bold text-white fs-4x mb-5 ms-n1">{{song.title}}</h3>
+                    <!--end::Title-->
+                    <!--begin::Items-->
+                    <div class="d-flex align-items-center">
+                      <!--begin::Item-->
+                      <div class="d-flex align-items-center me-6">
+  
+                      </div>
+                      <!--end::Item-->
+                      <!--begin::Item-->
+                      <div class="d-flex align-items-center">
+  
+                      </div>
+                      <!--end::Item-->
+                    </div>
+                    <!--end::Items-->
+                  </div>
+                  <!--end::Heading-->
+                  <!--begin::Action-->
+  
+                  <!--begin::Action-->
+                </div>
+                <!--end::Body-->
+              </div>
+              <!--end::Engage widget 6-->
+            </div>
+            <!--end::Engage widget 6-->
+                  </div>
+             
+                  
+                
+                </div>
+              </div>     
+           </div>
+</div>
+        <!--begin::Text-->
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="h-100 d-flex flex-column justify-content-between pe-lg-6 mb-lg-0 mb-10">
+                    <div class="fw-semibold fs-5 text-gray-600 text-dark mt-4">
+                        <div class="text-dark fw-bold text-hover-primary text-dark lh-base" style="font-size: 30px;">Welcome To Buttepatil Properties</div>
+                
+                        <div class="fs-2 text-dark fw-bold text-hover-primary text-dark lh-base mt-10">
+                        Buttepatil Properties is one of the market leaders with over 35 years of Experience & Expertise in the field of Construction & Redevelopment Activities. We have specific focus on Design & Engineering Excellence and have developed more than a million square feet of work in and around Pune. We have a dedicated team of Architects, Structural Consultants, Engineers, Contractors & Lawyers who strive to deliver to their best of abilities.
+                        Our business portfolio comprises of Residential & Commercial Construction & Residential Plotting. Spread across Pune city, our business synergizes to bring enhanced value, faster delivery & improved services for the customers with zero compromise on quality. Our foundation lies in integrity, customer orientation and commitment to excellence.
+                        </div>
+
+                        <div class="fs-2 text-dark fw-bold text-hover-primary text-dark lh-base mt-10 mb-5">
+                        Over the years, we have executed many prestigious projects & have carved a niche for ourself in the real estate & redevelopment segment. We have unmatched track record of completing most projects ahead of time without compromising on quality. Our brand stands at the core of who we are & what we stand for is not just our deliveries but also our everyday conduct. Our ultimate goal is to turn your Dream Homes into Reality.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--end::Text-->
+{% endblock content %}
