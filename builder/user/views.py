@@ -65,4 +65,15 @@ def logout_user(request):
         return redirect("/")
 
 
+def about_us_background(request):
+    return render(request, "about-us-background.html")
 
+
+def about_us_management(request):
+    return render(request, "about-us-management.html")
+
+def projects(request):
+    return render(request, "projects.html")
+
+def redevelopment_introduction(request):
+    return render(request, "redevelopment-introduction.html")
